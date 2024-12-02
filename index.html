@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devante Gandy Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-d"></i>
+                    <div class="logo-text">Devante Gandy</div>
+                </div>
+                <nav>
+                    <div class="btntoggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="mailto:devantegandyse@gmail.com">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="selfie">
+                    <img src="images/profilepic.jpg" alt="profilepic">
+                </div>
+                <div class="selfie-text">
+                    <h5>Hi I'm a <span class="input">Software Engineer</span></h5>
+                    <h1>Devante Gandy</h1>
+                    <p>
+                        A talented software developer with a strong passion for software development & engineering. <br>
+                        Experience designing, developing, and troubleshooting complex solutions throughout the entire software development
+                        life cycle. <br>
+                        A motivated self-learner who enjoys exploring and implementing new and emerging technologies.
+                    </p>
+
+                    <div class="btns">
+                        <a href="#" class="btn active">Download Resume</a>
+                        <a href="mailto:devantegandyse@gmail.com" class="btn">Contact</a>
+                    </div>
+
+                    <div class="socials">
+                        <a href="https://www.linkedin.com/in/devantegandy/" ><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/devantegandy" ><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100005428486711" ><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/dev4ntegandy/" ><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js" integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var btntoggle=document.querySelector(".btntoggle");
+        var nav=document.querySelector(".links");
+        var links=document.querySelector(".links li");
+
+        btntoggle.addEventListener("click" , function(){
+            this.classList.toggle('click');
+            nav.classList.toggle('open');
+
+        })
+
+        var typed=new Typed(".input", {
+            strings:["Frontend Developer", "Web Developer", "UI/UX Designer",],
+            typedSpeed: 90,
+            backSpeed: 100,
+            loop:true
+        })
+    </script>
+</body>
+</html>
