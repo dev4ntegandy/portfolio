@@ -232,4 +232,8 @@ margin-right: 2.5rem;
         padding: 40px 0px;
 
     }
+    .btns {
+        margin: 25px;
+        display: flex;
+    }
 }
